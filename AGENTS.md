@@ -22,7 +22,8 @@
 
 ## Folding sequences not in the AlphaFold DB
 
-- No portal instruction for “Fold a structure on our GPU” is present in the transcript or supplied files. Do not invent or substitute an instruction. Obtain and paste the exact portal instruction here before using that service.
+- Read and follow the course fold-service instructions at `https://ddls-structure-api-8a7d6803.svc.hypha.aicell.io/skill.md` before folding a sequence that is not in the AlphaFold DB.
+- The fold key is stored in the untracked `DDLS_FOLD_KEY` variable in `.env`. Load it with `set -a; source .env; set +a`, then send it as the Bearer token required by the service. Never print, commit, or write the key into this file or any other committed file.
 
 ## Version control
 
